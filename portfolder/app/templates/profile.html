@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <span class="title"><h3>Profile {{ user.username }}</h3>
+    </span>
+    <p>Investing in financial markets can be an excellent way to grow wealth and secure financial independence. However, simply making initial investments is not enough. To truly optimize your investment strategy and achieve your financial goals, it is crucial to monitor your investments regularly. In this article, we will explore the reasons why monitoring your investments is of paramount importance.</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Username: {{ user.username }}</p>
+    <p>Total portfolios value: 1234$</p>
+    <span class="main-text">
+    
+<div class="home-btn"><a class="btn btn-primary " id="settings" href="/settings">   Change information   </a></div>
+
+
+<p>{{ openai }}</p></span>
+</div>
+{% endblock %}

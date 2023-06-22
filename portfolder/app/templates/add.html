@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+{% block title %}Add asset{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <span class="title">Add asset to "{{ portfolio.name }}"</span>
+</div>
+<div class="add-container">
+  <label class="label">Asset category</label>
+
+    <div id="asset-category">
+
+        <a href="javascript:;" class="selected" data-container="form-cash">Cash</a>
+        <a href="javascript:;" data-container="form-deposit">Deposit</a>
+        <a href="javascript:;" data-container="form-stocks">Stocks</a>
+        <a href="javascript:;" data-container="form-futures">Futures</a>
+        <a href="javascript:;" data-container="form-crypto">Crypto</a>
+        <a href="javascript:;" data-container="form-other">Other</a>
+
+    </div><!-- #tab-nav -->
+    <div id="awesome-container">
+        <div id="form-cash">
+            <form class="form" method="POST">
+              <input hidden value="cash" name="asset-category">
+              
+                <div class=" form_control spec-input">
+                    <input required class="input form-control" list="currencies" placeholder="UAH - Ukrainian hryvnia" pattern="[A-Z]{3} - [A-Za-z ]{1,32}" type="text" id="currency" name="currency">
+                    <label class="label spec-input-label">Currency</label>
+                    {% if currencies %}
+                    <datalist id="currencies">
+                      {% for curr in currencies%}
+                        <option value="{{curr.ticker[:3]}} - {{curr.name}}">
+                      {% endfor %}
+                    </datalist> 
+                    {% else %}
+                    <datalist id="currencies">
+                      <option value="Error">
+                    </datalist> 
+                    {% endif %}
+                  </div>
+                  <div class=" form_control spec-input">
+                    <input required class="input form-control" type="number" placeholder="78.50" step="0.01" id="amount" name="amount">
+                    <label class="label spec-input-label">Amount</label>
+                  </div>
+                  <div class=" form_control spec-input">
+                    <input class="input form-control" type="number" placeholder="leave empty for auto pricing on date" step="0.01" id="price" name="price">
+                    <label class="label spec-input-label">Price</label>
+                  </div>
+                  <div class=" form_control spec-input">
+                    <input required class="input form-control" id="date" type="date" name="date" 
+                    placeholder="dd-mm-yyyy" value="{{ today }}" min="2020-01-01" max="{{ today }}">
+                    <label class="label spec-input-label">Purchase date</label>
+                  </div>
+                  
+                  <div class=" form_control spec-input">
+                    <textarea rows="1" class="auto-height input form-control" placeholder="Info about this asset if needed" oninput="auto_height(this)" name="desc"></textarea>
+                    <label class="label spec-input-label">Description</label>
+                  </div>
+                  
+              <button type="submit" class="form-submit">Add cash asset</button>
+            
+            </form>
+
+        </div>
+        <div id="form-deposit" style="display: none;">
+          <form class="form" method="POST">
+            <input hidden value="deposit" name="asset-category">
+
+            <div class=" form_control spec-input">
+                <input required class="input form-control" list="currencies" placeholder="UAH - Ukrainian hryvnia" pattern="[A-Z]{3} - [A-Za-z ]{1,32}" type="text" id="currency" name="currency">
+                <label class="label spec-input-label">Currency</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" placeholder="Barclays PLC" type="text" id="bank" name="bank">
+                <label class="label spec-input-label">Bank name</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" type="number" placeholder="385.50" step="0.01" id="value" name="value">
+                <label class="label spec-input-label">Value</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" type="number" placeholder="11.25" step="0.01" id="percent" name="percent">
+                <label class="label spec-input-label">Interest rate</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" id="date" type="date" name="date" 
+                placeholder="dd-mm-yyyy" value="{{ today }}" min="2020-01-01" max="{{ today }}">
+                <label class="label spec-input-label">Deposit date</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" id="due" type="date" name="due" min="{{ today }}" 
+                placeholder="dd-mm-yyyy">
+                <label class="label spec-input-label">Due date</label>
+              </div>
+              <div class=" form_control spec-input">
+                <textarea rows="1" class="auto-height input form-control" placeholder="Info about this asset if needed" oninput="auto_height(this)" name="desc"></textarea>
+                <label class="label spec-input-label">Description</label>
+              </div>
+              
+          <button type="submit" class="form-submit">Add deposit</button>
+        
+        </form>
+        </div>
+        <div id="form-stocks" style="display: none;">
+          <form class="form" method="POST">
+            <input hidden value="stocks" name="asset-category">
+
+            <div class=" form_control spec-input">
+                <input required class="input form-control" list="stocks" placeholder="MSFT - Microsoft Corporation" type="text" id="stock" name="stock">
+                <label class="label spec-input-label">Stock name</label>
+                {% if stocks %}
+                <datalist id="stocks">
+                  {% for stock in stocks%}
+                    <option value="{{stock.ticker}} - {{stock.name}}">
+                  {% endfor %}
+                </datalist> 
+                {% else %}
+                <datalist id="stocks">
+                  <option value="Error">
+                </datalist> 
+                {% endif %}
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" type="number" placeholder="12.5" step="0.01" id="share" name="share">
+                <label class="label spec-input-label">Stock share</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input class="input form-control" type="number" placeholder="leave empty for auto pricing on date" step="0.01" id="price" name="price">
+                <label class="label spec-input-label">Price per share</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" id="date" type="date" name="date" 
+                placeholder="dd-mm-yyyy" value="{{ today }}" min="2020-01-01" max="{{ today }}">
+                <label class="label spec-input-label">Purchase date</label>
+              </div>
+              <div class=" form_control spec-input">
+                <textarea rows="1" class="auto-height input form-control" placeholder="Info about this asset if needed" oninput="auto_height(this)" name="desc"></textarea>
+                <label class="label spec-input-label">Description</label>
+              </div>
+              
+          <button type="submit" class="form-submit">Add stock</button>
+        
+        </form>
+
+        </div>
+        <div id="form-futures" style="display: none;">
+          <form class="form" method="POST">
+            <input hidden value="futures" name="asset-category">
+
+            <div class=" form_control spec-input">
+                <input required class="input form-control" list="futures" placeholder="MGC - Micro Gold Futures,Aug-2023" type="text" id="future" name="future">
+                <label class="label spec-input-label">Future name</label>
+                {% if futures %}
+                <datalist id="futures">
+                  {% for future in futures%}
+                    <option value="{{future.ticker.split('=')[0]}} - {{future.name}}">
+                  {% endfor %}
+                </datalist> 
+                {% else %}
+                <datalist id="futures">
+                  <option value="Error">
+                </datalist> 
+                {% endif %}
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" type="number" placeholder="232.5" step="0.01" id="amount" name="amount">
+                <label class="label spec-input-label">Amount</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input class="input form-control" type="number" placeholder="leave empty for auto pricing on date" step="0.01" id="price" name="price">
+                <label class="label spec-input-label">Price</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" id="date" type="date" name="date" 
+                placeholder="dd-mm-yyyy" value="{{ today }}" min="2020-01-01" max="{{ today }}">
+                <label class="label spec-input-label">Purchase date</label>
+              </div>
+              <div class=" form_control spec-input">
+                <textarea rows="1" class="auto-height input form-control" placeholder="Info about this asset if needed" oninput="auto_height(this)" name="desc"></textarea>
+                <label class="label spec-input-label">Description</label>
+              </div>
+              
+          <button type="submit" class="form-submit">Add future</button>
+          
+        </form>
+
+        </div>
+        <div id="form-crypto" style="display: none;">
+          <form class="form" method="POST">
+            <input hidden value="crypto" name="asset-category">
+            <div class=" form_control spec-input">
+                <input required class="input form-control" list="cryptocurrencies" placeholder="DOGE - Dogecoin" type="text" id="cryptocurrency" name="cryptocurrency">
+                <label class="label spec-input-label">Currency</label>
+                {% if cryptocurrencies %}
+                <datalist id="cryptocurrencies">
+                  {% for cryptocur in cryptocurrencies%}
+                    <option value="{{cryptocur.ticker.split('-')[0]}} - {{cryptocur.name}}">
+                  {% endfor %}
+                </datalist> 
+                {% else %}
+                <datalist id="cryptocurrencies">
+                  <option value="Error">
+                </datalist> 
+                {% endif %}
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" type="number" placeholder="78.50" step="0.0000001" id="amount" name="amount">
+                <label class="label spec-input-label">Amount</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input class="input form-control" type="number" placeholder="leave empty for auto pricing on date" step="0.01" id="price" name="price">
+                <label class="label spec-input-label">Price</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" id="date" type="date" name="date" 
+                placeholder="dd-mm-yyyy" value="{{ today }}" min="2020-01-01" max="{{ today }}">
+                <label class="label spec-input-label">Purchase date</label>
+              </div>
+              <div class=" form_control spec-input">
+                <textarea rows="1" class="auto-height input form-control" placeholder="Info about this asset if needed" oninput="auto_height(this)" name="desc"></textarea>
+                <label class="label spec-input-label">Description</label>
+              </div>
+
+          <button type="submit" class="form-submit">Add crypto asset</button>
+        
+        </form>
+
+        </div>
+        <div id="form-other" style="display: none;">
+          <form class="form" method="POST">
+            <input hidden value="other" name="asset-category">
+            <div class=" form_control spec-input">
+                <input required class="input form-control" placeholder="Loan to Steven" type="text" id="name" name="name">
+                <label class="label spec-input-label">Name</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" type="number" placeholder="78.50" step="0.01" id="value" name="value">
+                <label class="label spec-input-label">Value</label>
+              </div>
+              <div class=" form_control spec-input">
+                <input required class="input form-control" id="date" type="date" name="date" 
+                placeholder="dd-mm-yyyy" value="{{ today }}" min="2020-01-01" max="{{ today }}">
+                <label class="label spec-input-label">Date</label>
+              </div>
+              <div class=" form_control spec-input">
+                <textarea rows="1" class="auto-height input form-control" placeholder="Info about this asset if needed" oninput="auto_height(this)" name="desc"></textarea>
+                <label class="label spec-input-label">Description</label>
+              </div>
+          
+          <button type="submit" class="form-submit">Add other asset</button>
+        
+        </form>
+
+        </div>
+
+    </div><!-- #awesome-container -->
+</div>
+
+
+{% endblock %}

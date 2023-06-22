@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <span class="title">Create portfolio</span>
+
+<div class="auth-container">
+<form class="form" method="POST">
+    <label class="label">Portfolio information</label>
+    <div class=" form_control">
+        <input required class="input form-control" type="text" id="name" name="name">
+        <label class="label">Name</label>
+      </div>
+      <div class=" form_control">
+        <input required class="input form-control" type="text" id="desc" name="desc">
+        <label class="label">Description</label>
+      </div>
+      <div class="wrapper">
+        <div class="option">
+          <input class="input" type="radio" name="private" value="1" checked="">
+          <div class="btn">
+            <span class="span">Private</span>
+          </div>
+        </div>
+        <div class="option">
+          <input class="input" type="radio" name="private" value="0">
+          <div class="btn">
+            <span class="span">Public</span>
+          </div>  </div>
+      </div>
+  
+  <button type="submit" class="form-submit">Create portfolio</button>
+
+</form>
+
+</div>
+{% endblock %}

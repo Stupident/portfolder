@@ -1,0 +1,150 @@
+[
+    {
+        "ticker": "ZB=F",
+        "name": "U.S. Treasury Bond Futures,Sep-"
+    },
+    {
+        "ticker": "SB=F",
+        "name": "Sugar #11 Oct 23"
+    },
+    {
+        "ticker": "ZL=F",
+        "name": "Soybean Oil Futures,Dec-2023"
+    },
+    {
+        "ticker": "ZM=F",
+        "name": "Soybean Meal Futures,Dec-2023"
+    },
+    {
+        "ticker": "ZS=F",
+        "name": "Soybean Futures,Nov-2023"
+    },
+    {
+        "ticker": "SI=F",
+        "name": "Silver"
+    },
+    {
+        "ticker": "ES=F",
+        "name": "S&P Futures"
+    },
+    {
+        "ticker": "RTY=F",
+        "name": "Russell 2000 Futures"
+    },
+    {
+        "ticker": "ZR=F",
+        "name": "Rough Rice Futures,Sep-2023"
+    },
+    {
+        "ticker": "RB=F",
+        "name": "RBOB Gasoline Jul 23"
+    },
+    {
+        "ticker": "PL=F",
+        "name": "Platinum Oct 23"
+    },
+    {
+        "ticker": "PA=F",
+        "name": "Palladium Sep 23"
+    },
+    {
+        "ticker": "OJ=F",
+        "name": "Orange Juice Sep 23"
+    },
+    {
+        "ticker": "ZO=F",
+        "name": "Oat Futures,Dec-2023"
+    },
+    {
+        "ticker": "NG=F",
+        "name": "Natural Gas Jul 23"
+    },
+    {
+        "ticker": "NQ=F",
+        "name": "Nasdaq Futures"
+    },
+    {
+        "ticker": "B0=F",
+        "name": "Mont Belvieu LDH Propane (OPIS)"
+    },
+    {
+        "ticker": "SIL=F",
+        "name": "Micro Silver Futures,Jul-2023"
+    },
+    {
+        "ticker": "MGC=F",
+        "name": "Micro Gold Futures,Aug-2023"
+    },
+    {
+        "ticker": "LBS=F",
+        "name": "Lumber May 23"
+    },
+    {
+        "ticker": "LE=F",
+        "name": "Live Cattle Futures,Aug-2023"
+    },
+    {
+        "ticker": "HE=F",
+        "name": "Lean Hogs Futures,Jul-2023"
+    },
+    {
+        "ticker": "KE=F",
+        "name": "KC HRW Wheat Futures,Jul-2023"
+    },
+    {
+        "ticker": "HO=F",
+        "name": "Heating Oil Jul 23"
+    },
+    {
+        "ticker": "GC=F",
+        "name": "Gold"
+    },
+    {
+        "ticker": "ZF=F",
+        "name": "Five-Year US Treasury Note Futu"
+    },
+    {
+        "ticker": "GF=F",
+        "name": "Feeder Cattle Futures,Aug-2023"
+    },
+    {
+        "ticker": "YM=F",
+        "name": "Dow Futures"
+    },
+    {
+        "ticker": "CL=F",
+        "name": "Crude Oil"
+    },
+    {
+        "ticker": "CT=F",
+        "name": "Cotton Oct 23"
+    },
+    {
+        "ticker": "ZC=F",
+        "name": "Corn Futures,Dec-2023"
+    },
+    {
+        "ticker": "HG=F",
+        "name": "Copper Jul 23"
+    },
+    {
+        "ticker": "KC=F",
+        "name": "Coffee Sep 23"
+    },
+    {
+        "ticker": "CC=F",
+        "name": "Cocoa Sep 23"
+    },
+    {
+        "ticker": "BZ=F",
+        "name": "Brent Crude Oil Last Day Financ"
+    },
+    {
+        "ticker": "ZT=F",
+        "name": "2-Year T-Note Futures,Sep-2023"
+    },
+    {
+        "ticker": "ZN=F",
+        "name": "10-Year T-Note Futures,Sep-2023"
+    }
+]

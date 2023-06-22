@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <div class="flex-row">
+    <div>
+    <span class="title"><h3>{{portfolio.name}} by {{user.username}}</h3>
+    </span>
+    <div class="flex-row">
+        <p>{{portfolio.desc}}<p>
+        <p><i>created {{portfolio.date}}</i></p>
+    </div>
+    {% if allocation %}
+    <div>
+      <img src="/static/images/portfolio_{{portfolio.id}}.png" class="allocation-img">
+    </div>
+    {% endif %}
+  </div>
+  <div class="recomends">
+    {% if recomends %}
+      {% for item in recomends.split('\n') %}
+          <p>{{item}}</p>
+      {% endfor %}
+    {% endif %}
+  </div>
+  </div>
+    {% if portfolio.cashs %}
+    <h4>Cash - {{portfolio.cash_curr_value()}} $</h4>
+<table class="table   table-dark">
+      <thead>
+        <tr>
+          {% for field in portfolio.cashs[0].get_fields_list() %}
+          <th scope="col">{{field}}</th>
+          {% endfor %}
+          <th scope="col">    </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for cash in portfolio.cashs %}
+          <tr>
+            <th>{{ cash.name }}</th>
+            {% for value in cash.get_fields()[1:] %}
+            <td>{{ value }}</td>
+            {% endfor %}
+            <td><a class="btn btn-danger " id="delete" href="{{portfolio.id}}/cash/{{cash.id}}/delete">Delete</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+</table>
+    {% endif %}
+
+    {% if portfolio.deposits %}
+    <h4>Deposit - {{portfolio.deposit_value()}} $</h4>
+<table class="table   table-dark">
+      <thead>
+        <tr>
+          {% for field in portfolio.deposits[0].get_fields_list() %}
+          <th scope="col">{{field}}</th>
+          {% endfor %}
+          <th scope="col">    </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for dep in portfolio.deposits %}
+          <tr>
+            <th>{{ dep.bank }}</th>
+            {% for value in dep.get_fields()[1:] %}
+            <td>{{ value }}</td>
+            {% endfor %}
+            <td><a class="btn btn-danger " id="delete" href="{{portfolio.id}}/deposit/{{dep.id}}/delete">Delete</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+</table>
+    {% endif %}
+
+    {% if portfolio.stocks %}
+    <h4>Stocks - {{portfolio.stock_curr_value()}} $</h4>
+<table class="table   table-dark">
+      <thead>
+        <tr>
+          {% for field in portfolio.stocks[0].get_fields_list() %}
+          <th scope="col">{{field}}</th>
+          {% endfor %}
+          <th scope="col">    </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for stock in portfolio.stocks %}
+          <tr>
+            <th>{{ stock.name }}</th>
+            {% for value in stock.get_fields()[1:] %}
+            <td>{{ value }}</td>
+            {% endfor %}
+            <td><a class="btn btn-danger " id="delete" href="{{portfolio.id}}/stock/{{stock.id}}/delete">Delete</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+</table>
+    {% endif %}
+
+    {% if portfolio.futures %}
+    <h4>Futures - {{portfolio.future_curr_value()}} $</h4>
+<table class="table   table-dark">
+      <thead>
+        <tr>
+          {% for field in portfolio.futures[0].get_fields_list() %}
+          <th scope="col">{{field}}</th>
+          {% endfor %}
+          <th scope="col">    </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for future in portfolio.futures %}
+          <tr>
+            <th>{{ future.name }}</th>
+            {% for value in future.get_fields()[1:] %}
+            <td>{{ value }}</td>
+            {% endfor %}
+            <td><a class="btn btn-danger " id="delete" href="/future/{{future.id}}/delete">Delete</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+</table>
+    {% endif %}
+
+    {% if portfolio.cryptos %}
+    <h4>Crypto - {{portfolio.crypto_curr_value()}} $</h4>
+<table class="table   table-dark">
+      <thead>
+        <tr>
+          {% for field in portfolio.cryptos[0].get_fields_list() %}
+          <th scope="col">{{field}}</th>
+          {% endfor %}
+          <th scope="col">    </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for crypto in portfolio.cryptos %}
+          <tr>
+            <th>{{ crypto.name }}</th>
+            {% for value in crypto.get_fields()[1:] %}
+            <td>{{ value }}</td>
+            {% endfor %}
+            <td><a class="btn btn-danger " id="delete" href="{{portfolio.id}}/crypto/{{crypto.id}}/delete">Delete</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+</table>
+    {% endif %}
+
+
+    {% if portfolio.others %}
+    <h4>Other - {{portfolio.other_value()}} $</h4>
+<table class="table   table-dark">
+      <thead>
+        <tr>
+          {% for field in portfolio.others[0].get_fields_list() %}
+          <th scope="col">{{field}}</th>
+          {% endfor %}
+          <th scope="col">    </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for other in portfolio.others %}
+          <tr>
+            <th>{{ other.name }}</th>
+            {% for value in other.get_fields()[1:] %}
+            <td>{{ value }}</td>
+            {% endfor %}
+            <td><a class="btn btn-danger " id="delete" href="{{portfolio.id}}/other/{{other.id}}/delete">Delete</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+</table>
+    {% endif %}
+
+    <div class="flex-row">
+        <div class="action-btn"><a class="btn btn-primary " id="add" href="{{portfolio.id}}/add">   Add asset   </a></div>
+        <div class="action-btn"><a class="btn btn-danger " id="delete" href="{{portfolio.id}}/delete">   Delete portfolio   </a></div>
+    </div>
+
+</div>
+{% endblock %}

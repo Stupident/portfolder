@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+    <div class="main-content">
+        <span class="title">SIGN UP TO PORTFOLDER</span>
+        <span class="main-text">Start enjoying with simple monitoring of your</span>
+        <span class="main-text">investment portfolio, wide visualization and structuration</span>
+    </div>
+    <div class="auth-container">
+    <form class="form" method="POST">
+      <div class="form-group form_control">
+        <input required class="input form-control" type="text" id="username" name="username">
+        <label class="label">Username</label>
+      </div>
+      <div class="form_control">
+        <input required class="input form-control" type="text" id="email" name="email">
+        <label class="label">Email</label>
+      </div>
+      <div class="form_control">
+        <input required class="input form-control" type="password" id="password1" name="password1">
+        <label class="label">Password</label>
+      </div>
+      <div class="form_control">
+        <input required class="input form-control" type="password" id="password2" name="password2">
+        <label class="label">Confirm password</label>
+      </div>
+      
+      <button type="submit"  class="form-submit">Sign Up</button>
+
+      <span class="bottom_text">Already have an account?
+          <a class="switch" id="login" href="/login"> Login</a>
+      </span>
+    </form>
+
+
+    </div>
+{% endblock %}

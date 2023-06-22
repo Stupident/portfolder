@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Portfolder{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <span class="title"><h3>My portfolios</h3>
+    </span>
+    
+<table class="table responsive table-hover  table-dark">
+    {% if user.portfolios %}
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Value</th>
+          <th scope="col">Current value</th>
+          <th scope="col">PnL</th>
+          <th scope="col">Created</th>
+          <th scope="col">Description</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for portfolio in user.portfolios %}
+          <tr onclick="window.location='/portfolio/{{portfolio.id}}';">
+            <th>{{ portfolio.name }}</th>
+            <td>{{ portfolio.total_value() }} $</td>
+            <td>{{ portfolio.total_curr_value() }} $</td>
+            <td>{{ portfolio.pnl() }} $ ({{portfolio.pnl_percent()}} %)</td>
+            <td>{{ portfolio.date }}</td>
+            <td>{{ portfolio.desc }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+</table>
+    {% else %}
+        <p>Seems like you don`t have any portfolio yet. Create one right one!</p>
+    {% endif %}
+
+
+<div class="home-btn"><a class="btn btn-primary " id="create" href="/create">   Create portfolio   </a></div>
+
+
+</div>
+{% endblock %}
