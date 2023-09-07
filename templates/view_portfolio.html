@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Investment Portfolio</h2>
+    <h3>Investments</h3>
+    <ul>
+        {% for investment in investments %}
+            <li>{{ investment }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,767 @@
+[
+    {
+        "ticker": "AEDUSD=X",
+        "name": "UAE dirham",
+        "symbol": "\u062f.\u0625;"
+    },
+    {
+        "ticker": "AFNUSD=X",
+        "name": "Afghan afghani",
+        "symbol": "Afs"
+    },
+    {
+        "ticker": "ALLUSD=X",
+        "name": "Albanian lek",
+        "symbol": "L"
+    },
+    {
+        "ticker": "AMDUSD=X",
+        "name": "Armenian dram",
+        "symbol": "AMD"
+    },
+    {
+        "ticker": "ANGUSD=X",
+        "name": "Netherlands Antillean gulden",
+        "symbol": "NA\u0192"
+    },
+    {
+        "ticker": "AOAUSD=X",
+        "name": "Angolan kwanza",
+        "symbol": "Kz"
+    },
+    {
+        "ticker": "ARSUSD=X",
+        "name": "Argentine peso",
+        "symbol": "$"
+    },
+    {
+        "ticker": "AUDUSD=X",
+        "name": "Australian dollar",
+        "symbol": "$"
+    },
+    {
+        "ticker": "AWGUSD=X",
+        "name": "Aruban florin",
+        "symbol": "\u0192"
+    },
+    {
+        "ticker": "AZNUSD=X",
+        "name": "Azerbaijani manat",
+        "symbol": "AZN"
+    },
+    {
+        "ticker": "BAMUSD=X",
+        "name": "Bosnia and Herzegovina konvertibilna marka",
+        "symbol": "KM"
+    },
+    {
+        "ticker": "BBDUSD=X",
+        "name": "Barbadian dollar",
+        "symbol": "Bds$"
+    },
+    {
+        "ticker": "BDTUSD=X",
+        "name": "Bangladeshi taka",
+        "symbol": "\u09f3"
+    },
+    {
+        "ticker": "BGNUSD=X",
+        "name": "Bulgarian lev",
+        "symbol": "BGN"
+    },
+    {
+        "ticker": "BHDUSD=X",
+        "name": "Bahraini dinar",
+        "symbol": ".\u062f.\u0628"
+    },
+    {
+        "ticker": "BIFUSD=X",
+        "name": "Burundi franc",
+        "symbol": "FBu"
+    },
+    {
+        "ticker": "BMDUSD=X",
+        "name": "Bermudian dollar",
+        "symbol": "BD$"
+    },
+    {
+        "ticker": "BNDUSD=X",
+        "name": "Brunei dollar",
+        "symbol": "B$"
+    },
+    {
+        "ticker": "BOBUSD=X",
+        "name": "Bolivian boliviano",
+        "symbol": "Bs."
+    },
+    {
+        "ticker": "BRLUSD=X",
+        "name": "Brazilian real",
+        "symbol": "R$"
+    },
+    {
+        "ticker": "BSDUSD=X",
+        "name": "Bahamian dollar",
+        "symbol": "B$"
+    },
+    {
+        "ticker": "BTNUSD=X",
+        "name": "Bhutanese ngultrum",
+        "symbol": "Nu."
+    },
+    {
+        "ticker": "BWPUSD=X",
+        "name": "Botswana pula",
+        "symbol": "P"
+    },
+    {
+        "ticker": "BYRUSD=X",
+        "name": "Belarusian ruble",
+        "symbol": "Br"
+    },
+    {
+        "ticker": "BZDUSD=X",
+        "name": "Belize dollar",
+        "symbol": "BZ$"
+    },
+    {
+        "ticker": "CADUSD=X",
+        "name": "Canadian dollar",
+        "symbol": "$"
+    },
+    {
+        "ticker": "CDFUSD=X",
+        "name": "Congolese franc",
+        "symbol": "F"
+    },
+    {
+        "ticker": "CHFUSD=X",
+        "name": "Swiss franc",
+        "symbol": "Fr."
+    },
+    {
+        "ticker": "CLPUSD=X",
+        "name": "Chilean peso",
+        "symbol": "$"
+    },
+    {
+        "ticker": "CNYUSD=X",
+        "name": "Chinese/Yuan renminbi",
+        "symbol": "\u00a5"
+    },
+    {
+        "ticker": "COPUSD=X",
+        "name": "Colombian peso",
+        "symbol": "Col$"
+    },
+    {
+        "ticker": "CRCUSD=X",
+        "name": "Costa Rican colon",
+        "symbol": "\u20a1"
+    },
+    {
+        "ticker": "CVEUSD=X",
+        "name": "Cape Verdean escudo",
+        "symbol": "Esc"
+    },
+    {
+        "ticker": "CZKUSD=X",
+        "name": "Czech koruna",
+        "symbol": "K\u010d"
+    },
+    {
+        "ticker": "DJFUSD=X",
+        "name": "Djiboutian franc",
+        "symbol": "Fdj"
+    },
+    {
+        "ticker": "DKKUSD=X",
+        "name": "Danish krone",
+        "symbol": "Kr"
+    },
+    {
+        "ticker": "DOPUSD=X",
+        "name": "Dominican peso",
+        "symbol": "RD$"
+    },
+    {
+        "ticker": "DZDUSD=X",
+        "name": "Algerian dinar",
+        "symbol": "\u062f.\u062c"
+    },
+    {
+        "ticker": "EGPUSD=X",
+        "name": "Egyptian pound",
+        "symbol": "\u00a3"
+    },
+    {
+        "ticker": "ERNUSD=X",
+        "name": "Eritrean nakfa",
+        "symbol": "Nfa"
+    },
+    {
+        "ticker": "ETBUSD=X",
+        "name": "Ethiopian birr",
+        "symbol": "Br"
+    },
+    {
+        "ticker": "EURUSD=X",
+        "name": "European Euro",
+        "symbol": "\u20ac"
+    },
+    {
+        "ticker": "FJDUSD=X",
+        "name": "Fijian dollar",
+        "symbol": "FJ$"
+    },
+    {
+        "ticker": "FKPUSD=X",
+        "name": "Falkland Islands pound",
+        "symbol": "\u00a3"
+    },
+    {
+        "ticker": "GBPUSD=X",
+        "name": "British pound",
+        "symbol": "\u00a3"
+    },
+    {
+        "ticker": "GELUSD=X",
+        "name": "Georgian lari",
+        "symbol": "GEL"
+    },
+    {
+        "ticker": "GHSUSD=X",
+        "name": "Ghanaian cedi",
+        "symbol": "GH\u20b5"
+    },
+    {
+        "ticker": "GIPUSD=X",
+        "name": "Gibraltar pound",
+        "symbol": "\u00a3"
+    },
+    {
+        "ticker": "GMDUSD=X",
+        "name": "Gambian dalasi",
+        "symbol": "D"
+    },
+    {
+        "ticker": "GNFUSD=X",
+        "name": "Guinean franc",
+        "symbol": "FG"
+    },
+    {
+        "ticker": "GTQUSD=X",
+        "name": "Guatemalan quetzal",
+        "symbol": "Q"
+    },
+    {
+        "ticker": "GYDUSD=X",
+        "name": "Guyanese dollar",
+        "symbol": "GY$"
+    },
+    {
+        "ticker": "HKDUSD=X",
+        "name": "Hong Kong dollar",
+        "symbol": "HK$"
+    },
+    {
+        "ticker": "HNLUSD=X",
+        "name": "Honduran lempira",
+        "symbol": "L"
+    },
+    {
+        "ticker": "HRKUSD=X",
+        "name": "Croatian kuna",
+        "symbol": "kn"
+    },
+    {
+        "ticker": "HTGUSD=X",
+        "name": "Haitian gourde",
+        "symbol": "G"
+    },
+    {
+        "ticker": "HUFUSD=X",
+        "name": "Hungarian forint",
+        "symbol": "Ft"
+    },
+    {
+        "ticker": "IDRUSD=X",
+        "name": "Indonesian rupiah",
+        "symbol": "Rp"
+    },
+    {
+        "ticker": "ILSUSD=X",
+        "name": "Israeli new sheqel",
+        "symbol": "\u20aa"
+    },
+    {
+        "ticker": "INRUSD=X",
+        "name": "Indian rupee",
+        "symbol": "\u20b9"
+    },
+    {
+        "ticker": "IQDUSD=X",
+        "name": "Iraqi dinar",
+        "symbol": "\u062f.\u0639"
+    },
+    {
+        "ticker": "IRRUSD=X",
+        "name": "Iranian rial",
+        "symbol": "IRR"
+    },
+    {
+        "ticker": "ISKUSD=X",
+        "name": "Icelandic kr\u00f3na",
+        "symbol": "kr"
+    },
+    {
+        "ticker": "JMDUSD=X",
+        "name": "Jamaican dollar",
+        "symbol": "J$"
+    },
+    {
+        "ticker": "JODUSD=X",
+        "name": "Jordanian dinar",
+        "symbol": "JOD"
+    },
+    {
+        "ticker": "JPYUSD=X",
+        "name": "Japanese yen",
+        "symbol": "\u00a5"
+    },
+    {
+        "ticker": "KESUSD=X",
+        "name": "Kenyan shilling",
+        "symbol": "KSh"
+    },
+    {
+        "ticker": "KGSUSD=X",
+        "name": "Kyrgyzstani som",
+        "symbol": "\u0441\u043e\u043c"
+    },
+    {
+        "ticker": "KHRUSD=X",
+        "name": "Cambodian riel",
+        "symbol": "\u17db"
+    },
+    {
+        "ticker": "KMFUSD=X",
+        "name": "Comorian franc",
+        "symbol": "KMF"
+    },
+    {
+        "ticker": "KPWUSD=X",
+        "name": "North Korean won",
+        "symbol": "W"
+    },
+    {
+        "ticker": "KRWUSD=X",
+        "name": "South Korean won",
+        "symbol": "W"
+    },
+    {
+        "ticker": "KWDUSD=X",
+        "name": "Kuwaiti dinar",
+        "symbol": "KWD"
+    },
+    {
+        "ticker": "KYDUSD=X",
+        "name": "Cayman Islands dollar",
+        "symbol": "KY$"
+    },
+    {
+        "ticker": "KZTUSD=X",
+        "name": "Kazakhstani tenge",
+        "symbol": "T"
+    },
+    {
+        "ticker": "LAKUSD=X",
+        "name": "Lao kip",
+        "symbol": "KN"
+    },
+    {
+        "ticker": "LBPUSD=X",
+        "name": "Lebanese lira",
+        "symbol": "\u00a3"
+    },
+    {
+        "ticker": "LKRUSD=X",
+        "name": "Sri Lankan rupee",
+        "symbol": "Rs"
+    },
+    {
+        "ticker": "LRDUSD=X",
+        "name": "Liberian dollar",
+        "symbol": "L$"
+    },
+    {
+        "ticker": "LSLUSD=X",
+        "name": "Lesotho loti",
+        "symbol": "M"
+    },
+    {
+        "ticker": "LYDUSD=X",
+        "name": "Libyan dinar",
+        "symbol": "LD"
+    },
+    {
+        "ticker": "MADUSD=X",
+        "name": "Moroccan dirham",
+        "symbol": "MAD"
+    },
+    {
+        "ticker": "MDLUSD=X",
+        "name": "Moldovan leu",
+        "symbol": "MDL"
+    },
+    {
+        "ticker": "MGAUSD=X",
+        "name": "Malagasy ariary",
+        "symbol": "FMG"
+    },
+    {
+        "ticker": "MKDUSD=X",
+        "name": "Macedonian denar",
+        "symbol": "MKD"
+    },
+    {
+        "ticker": "MMKUSD=X",
+        "name": "Myanma kyat",
+        "symbol": "K"
+    },
+    {
+        "ticker": "MNTUSD=X",
+        "name": "Mongolian tugrik",
+        "symbol": "\u20ae"
+    },
+    {
+        "ticker": "MOPUSD=X",
+        "name": "Macanese pataca",
+        "symbol": "P"
+    },
+    {
+        "ticker": "MROUSD=X",
+        "name": "Mauritanian ouguiya",
+        "symbol": "UM"
+    },
+    {
+        "ticker": "MURUSD=X",
+        "name": "Mauritian rupee",
+        "symbol": "Rs"
+    },
+    {
+        "ticker": "MVRUSD=X",
+        "name": "Maldivian rufiyaa",
+        "symbol": "Rf"
+    },
+    {
+        "ticker": "MWKUSD=X",
+        "name": "Malawian kwacha",
+        "symbol": "MK"
+    },
+    {
+        "ticker": "MXNUSD=X",
+        "name": "Mexican peso",
+        "symbol": "$"
+    },
+    {
+        "ticker": "MYRUSD=X",
+        "name": "Malaysian ringgit",
+        "symbol": "RM"
+    },
+    {
+        "ticker": "MZNUSD=X",
+        "name": "Mozambican metical",
+        "symbol": "MT"
+    },
+    {
+        "ticker": "NADUSD=X",
+        "name": "Namibian dollar",
+        "symbol": "N$"
+    },
+    {
+        "ticker": "NGNUSD=X",
+        "name": "Nigerian naira",
+        "symbol": "\u20a6"
+    },
+    {
+        "ticker": "NIOUSD=X",
+        "name": "Nicaraguan c\u00f3rdoba",
+        "symbol": "C$"
+    },
+    {
+        "ticker": "NOKUSD=X",
+        "name": "Norwegian krone",
+        "symbol": "kr"
+    },
+    {
+        "ticker": "NPRUSD=X",
+        "name": "Nepalese rupee",
+        "symbol": "NRs"
+    },
+    {
+        "ticker": "NZDUSD=X",
+        "name": "New Zealand dollar",
+        "symbol": "NZ$"
+    },
+    {
+        "ticker": "OMRUSD=X",
+        "name": "Omani rial",
+        "symbol": "OMR"
+    },
+    {
+        "ticker": "PABUSD=X",
+        "name": "Panamanian balboa",
+        "symbol": "B./"
+    },
+    {
+        "ticker": "PENUSD=X",
+        "name": "Peruvian nuevo sol",
+        "symbol": "S/."
+    },
+    {
+        "ticker": "PGKUSD=X",
+        "name": "Papua New Guinean kina",
+        "symbol": "K"
+    },
+    {
+        "ticker": "PHPUSD=X",
+        "name": "Philippine peso",
+        "symbol": "\u20b1"
+    },
+    {
+        "ticker": "PKRUSD=X",
+        "name": "Pakistani rupee",
+        "symbol": "Rs."
+    },
+    {
+        "ticker": "PLNUSD=X",
+        "name": "Polish zloty",
+        "symbol": "z\u0142"
+    },
+    {
+        "ticker": "PYGUSD=X",
+        "name": "Paraguayan guarani",
+        "symbol": "\u20b2"
+    },
+    {
+        "ticker": "QARUSD=X",
+        "name": "Qatari riyal",
+        "symbol": "QR"
+    },
+    {
+        "ticker": "RONUSD=X",
+        "name": "Romanian leu",
+        "symbol": "L"
+    },
+    {
+        "ticker": "RSDUSD=X",
+        "name": "Serbian dinar",
+        "symbol": "din."
+    },
+    {
+        "ticker": "RUBUSD=X",
+        "name": "Russian ruble",
+        "symbol": "\u20bd"
+    },
+    {
+        "ticker": "RWFUSD=X",
+        "name": "Rwandan franc",
+        "symbol": "FRw"
+    },
+    {
+        "ticker": "SARUSD=X",
+        "name": "Saudi riyal",
+        "symbol": "SR"
+    },
+    {
+        "ticker": "SBDUSD=X",
+        "name": "Solomon Islands dollar",
+        "symbol": "SI$"
+    },
+    {
+        "ticker": "SCRUSD=X",
+        "name": "Seychellois rupee",
+        "symbol": "SR"
+    },
+    {
+        "ticker": "SDGUSD=X",
+        "name": "Sudanese pound",
+        "symbol": "SDG"
+    },
+    {
+        "ticker": "SEKUSD=X",
+        "name": "Swedish krona",
+        "symbol": "kr"
+    },
+    {
+        "ticker": "SGDUSD=X",
+        "name": "Singapore dollar",
+        "symbol": "S$"
+    },
+    {
+        "ticker": "SHPUSD=X",
+        "name": "Saint Helena pound",
+        "symbol": "\u00a3"
+    },
+    {
+        "ticker": "SLLUSD=X",
+        "name": "Sierra Leonean leone",
+        "symbol": "Le"
+    },
+    {
+        "ticker": "SOSUSD=X",
+        "name": "Somali shilling",
+        "symbol": "Sh."
+    },
+    {
+        "ticker": "SRDUSD=X",
+        "name": "Surinamese dollar",
+        "symbol": "$"
+    },
+    {
+        "ticker": "STDUSD=X",
+        "name": "S\u0413\u0408o Tom\u0413\u00a9 and Pr\u0413\u00adncipe dobra",
+        "symbol": "Db"
+    },
+    {
+        "ticker": "STNUSD=X",
+        "name": "S\u0413\u0408o Tom\u0413\u00a9 and Pr\u0413\u00adncipe dobra",
+        "symbol": "Db"
+    },
+    {
+        "ticker": "SYPUSD=X",
+        "name": "Syrian pound",
+        "symbol": "LS"
+    },
+    {
+        "ticker": "SZLUSD=X",
+        "name": "Swazi lilangeni",
+        "symbol": "E"
+    },
+    {
+        "ticker": "THBUSD=X",
+        "name": "Thai baht",
+        "symbol": "\u0e3f"
+    },
+    {
+        "ticker": "TJSUSD=X",
+        "name": "Tajikistani somoni",
+        "symbol": "TJS"
+    },
+    {
+        "ticker": "TMTUSD=X",
+        "name": "Turkmen manat",
+        "symbol": "m"
+    },
+    {
+        "ticker": "TNDUSD=X",
+        "name": "Tunisian dinar",
+        "symbol": "DT"
+    },
+    {
+        "ticker": "TOPUSD=X",
+        "name": "Tongan Pa'anga",
+        "symbol": "T$"
+    },
+    {
+        "ticker": "TRYUSD=X",
+        "name": "Turkish new lira",
+        "symbol": "TRY"
+    },
+    {
+        "ticker": "TTDUSD=X",
+        "name": "Trinidad and Tobago dollar",
+        "symbol": "TT$"
+    },
+    {
+        "ticker": "TWDUSD=X",
+        "name": "New Taiwan dollar",
+        "symbol": "NT$"
+    },
+    {
+        "ticker": "TZSUSD=X",
+        "name": "Tanzanian shilling",
+        "symbol": "TZS"
+    },
+    {
+        "ticker": "UAHUSD=X",
+        "name": "Ukrainian hryvnia",
+        "symbol": "UAH"
+    },
+    {
+        "ticker": "UGXUSD=X",
+        "name": "Ugandan shilling",
+        "symbol": "USh"
+    },
+    {
+        "ticker": "USDUSD=X",
+        "name": "United States dollar",
+        "symbol": "$"
+    },
+    {
+        "ticker": "UYUUSD=X",
+        "name": "Uruguayan peso",
+        "symbol": "$U"
+    },
+    {
+        "ticker": "UZSUSD=X",
+        "name": "Uzbekistani som",
+        "symbol": "UZS"
+    },
+    {
+        "ticker": "VNDUSD=X",
+        "name": "Vietnamese dong",
+        "symbol": "\u20ab"
+    },
+    {
+        "ticker": "VUVUSD=X",
+        "name": "Vanuatu vatu",
+        "symbol": "VT"
+    },
+    {
+        "ticker": "WSTUSD=X",
+        "name": "Samoan tala",
+        "symbol": "WS$"
+    },
+    {
+        "ticker": "XAFUSD=X",
+        "name": "Central African CFA franc",
+        "symbol": "CFA"
+    },
+    {
+        "ticker": "XCDUSD=X",
+        "name": "East Caribbean dollar",
+        "symbol": "EC$"
+    },
+    {
+        "ticker": "XDRUSD=X",
+        "name": "Special Drawing Rights",
+        "symbol": "SDR"
+    },
+    {
+        "ticker": "XOFUSD=X",
+        "name": "West African CFA franc",
+        "symbol": "CFA"
+    },
+    {
+        "ticker": "XPFUSD=X",
+        "name": "CFP franc",
+        "symbol": "F"
+    },
+    {
+        "ticker": "YERUSD=X",
+        "name": "Yemeni rial",
+        "symbol": "YER"
+    },
+    {
+        "ticker": "ZARUSD=X",
+        "name": "South African rand",
+        "symbol": "R"
+    },
+    {
+        "ticker": "ZMWUSD=X",
+        "name": "Zambian kwacha",
+        "symbol": "ZK"
+    }
+]
